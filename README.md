@@ -7,5 +7,7 @@ To install run
 # Fetch Dependencies and compile
 make fetch
 make
+
+# (Optional) To move the executable to /usr/local/bin
 make install
 ```
