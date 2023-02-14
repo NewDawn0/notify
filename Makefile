@@ -1,5 +1,5 @@
 TARGET = notify
-.PHONY: clean
+.PHONY: clean install
 default: fetch build clean
 fetch:
 	@echo "\x1b[32;1mFetching...\x1b[0m"
@@ -12,5 +12,8 @@ build:
 
 clean:
 	@echo "\x1b[32;1mCleaning...\x1b[0m"
-	rm -rf .build Package.resolved notify
+	rm -rf .build Package.resolved
 
+install:
+	@echo "\x1b[32;1mInstalling...\x1b[0m"
+	sudo mv notify /usr/local/bin
