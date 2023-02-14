@@ -5,7 +5,6 @@ Notify-send on macOs
 To install run 
 ```bash
 # Fetch Dependencies and compile
-make fetch
 make
 
 # (Optional) To move the executable to /usr/local/bin
