@@ -62,10 +62,10 @@ func fillArgs(flag []string, msg string, min int, max int) (string, string, stri
 		perror(ReqArgMissing, msg)
 	}
 	res := make([]string, 3)
+  res[1] = "."
 	for i, s := range flag {
 		res[i] = s
 	}
-  res[1] = "."
 	return res[0], res[1], res[2]
 }
 
