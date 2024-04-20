@@ -35,7 +35,7 @@ func main() {
 			return
 		}
 	} else {
-		err = notify(fillArgs(args, "-n <Title> <Body (optional)> <Icon (optional)>", 1, 3))
+		err = notify(fillArgs(args, "<Title> <Body (optional)> <Icon (optional)>", 1, 3))
 	}
 	if err != nil {
 		fmt.Fprintln(os.Stderr, fmt.Sprintf("Error: %v", err))
